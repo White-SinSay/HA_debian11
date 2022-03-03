@@ -17,12 +17,14 @@ apt-get install jq curl avahi-daemon apparmor-utils udisks2 libglib2.0-bin netwo
 curl -fsSL get.docker.com | sh
 
 wget https://github.com/home-assistant/os-agent/releases/download/1.2.2/os-agent_1.2.2_linux_x86_64.deb
+
 dpkg -i os-agent_1.2.2_linux_x86_64.deb
 
 Если возникает ошибка, вот команда которая исправит это
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
+
 dpkg -i homeassistant-supervised.deb
 
 apt-get install htop mc
