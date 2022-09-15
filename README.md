@@ -17,9 +17,13 @@ apt-get install jq curl avahi-daemon apparmor-utils udisks2 libglib2.0-bin netwo
 curl -fsSL get.docker.com | sh
 
 #Устаревшая
+
 #wget https://github.com/home-assistant/os-agent/releases/download/1.2.2/os-agent_1.2.2_linux_x86_64.deb
+
 #dpkg -i os-agent_1.2.2_linux_x86_64.deb
+
 wget https://github.com/home-assistant/os-agent/releases/download/1.3.0/os-agent_1.3.0_linux_x86_64.deb
+
 dpkg -i os-agent_1.3.0_linux_x86_64.deb
 
 
