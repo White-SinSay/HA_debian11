@@ -28,6 +28,7 @@ dpkg -i os-agent_1.3.0_linux_x86_64.deb
 
 
 Если возникает ошибка, вот команда которая исправит это
+
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
