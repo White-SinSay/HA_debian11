@@ -8,7 +8,7 @@ sudo -i
  или 
 su
 
-apt update && sudo apt upgrade -y && sudo apt autoremove -y
+apt update && apt upgrade -y && apt autoremove -y
 
 apt --fix-broken install
 
