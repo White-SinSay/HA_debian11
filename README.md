@@ -12,7 +12,7 @@ apt update && apt upgrade -y && apt autoremove -y
 
 apt --fix-broken install
 
-apt-get install jq curl avahi-daemon apparmor-utils udisks2 libglib2.0-bin network-manager dbus wget -y
+apt-get install jq curl avahi-daemon apparmor-utils udisks2 libglib2.0-bin network-manager dbus wget systemd-journal-remote -y
 
 curl -fsSL get.docker.com | sh
 
