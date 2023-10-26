@@ -36,3 +36,15 @@ wget https://github.com/home-assistant/supervised-installer/releases/latest/down
 dpkg -i homeassistant-supervised.deb
 
 apt-get install htop mc
+
+Если возникла ошибка
+"dpkg: зависимости пакетов не позволяют настроить пакет homeassistant-supervised:
+homeassistant-supervised зависит от systemd-resolved, однако:
+Пакет systemd-resolved не установлен."
+То сделайте следующее
+
+    apt install equivs
+    equivs-control systemd-resolved.control
+    sed -i 's/<package name; defaults to equivs-dummy>/systemd-resolved/g' systemd-resolved.control
+    equivs-build systemd-resolved.control
+    dpkg -i systemd-resolved_1.0_all.deb
